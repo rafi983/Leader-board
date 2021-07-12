@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leader-Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -15,15 +19,15 @@
           <span>Idea</span>
         </div>
         <div class="nav__right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Works</a></li>
+          <li class="nav__link"><a href="#">Home</a></li>
+          <li class="nav__link"><a href="#">About</a></li>
+          <li class="nav__link"><a href="#">Works</a></li>
           <img src="images/icons/profile.png" alt="profile" />
         </div>
       </nav>
     </header>
     <main>
-      <section class="section__container">
+      <section class="section__container container">
         <div class="players__section">
           <h2>Top Players</h2>
           <div class="top__players">
@@ -108,6 +112,88 @@
                 <p>By <a href="#">Ferdinand Vogle</a></p>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses__section container">
+        <h2>Latest Courses</h2>
+        <div class="courses">
+          <div class="course">
+            <div class="course__img">
+              <img src="./images/courses/course-1.png" alt="" />
+            </div>
+            <div class="course__info">
+              <h2 class="course-title">
+                React - The Complete<br />
+                Guide 2021
+              </h2>
+              <p class="course-instructor">Reed Krakoff</p>
+            </div>
+            <div class="course__outline">
+              <div class="course__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating">4.5</span>
+              <span class="course-duration"
+                ><i class="far fa-clock"></i> 01:30 hr</span
+              >
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course__img">
+              <img src="./images/courses/course-2.png" alt="" />
+            </div>
+            <div class="course__info">
+              <h2 class="course-title">
+                Powerpoint 2020 <br />
+                Master Powerpoint Cour
+              </h2>
+              <p class="course-instructor">Walter Scott</p>
+            </div>
+            <div class="course__outline">
+              <div class="course__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating">4.5</span>
+              <span class="course-duration"
+                ><i class="far fa-clock"></i> 01:30 hr</span
+              >
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course__img">
+              <img src="./images/courses/course-3.png" alt="" />
+            </div>
+            <div class="course__info">
+              <h2 class="course-title">
+                The Complete JavaScript Course - 2021
+              </h2>
+              <p class="course-instructor">Reed Krakoff</p>
+            </div>
+            <div class="course__outline">
+              <div class="course__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating">4.5</span>
+              <span class="course-duration"
+                ><i class="far fa-clock"></i> 01:30 hr</span
+              >
+            </div>
           </div>
         </div>
       </section>

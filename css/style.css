@@ -13,7 +13,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 header nav {
@@ -51,16 +51,18 @@ header nav .nav__right img {
 main {
   background-color: #f3f1ff;
   display: flex;
-  justify-content: center;
-  height: 800px;
+  align-items: center;
+  flex-direction: column;
+  height: 1300px;
   padding-bottom: 2rem;
 }
 
-section.section__container {
+.container {
   background-color: #ffffff;
   width: 60%;
   margin-top: 35px;
   border-radius: 5px;
+  padding-bottom: 2rem;
 }
 .top__players {
   display: grid;
@@ -118,4 +120,57 @@ section.section__container {
 }
 .blogs__container .blog .blog-info p a {
   color: #562eff;
+}
+.courses__section > h2 {
+  margin: 2.2rem 0 0 2rem;
+  color: #562eff;
+}
+.courses__section.container .courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.8rem;
+  padding: 1.3rem 1.5rem;
+}
+.courses__section.container .courses .course {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.089);
+  border-radius: 20px;
+  width: 252px;
+  padding-bottom: 1.5rem;
+}
+.courses__section.container .courses .course .course__img img {
+  width: 224px;
+  height: 104px;
+  margin: 13px 0 0 13px;
+}
+.courses__section.container .courses .course .course__info .course-title {
+  margin: 10px 0 10px 13px;
+  font-size: 18px;
+}
+.courses__section.container .courses .course .course__info .course-instructor {
+  margin-left: 13px;
+}
+.courses__section.container .courses .course .course__outline {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 10px 13px;
+}
+.courses__section.container .courses .course .course__outline span.rating {
+  margin-left: -0.8rem;
+  margin-top: 0.1rem;
+}
+.courses__section.container
+  .courses
+  .course
+  .course__outline
+  .course__ratings
+  i {
+  font-size: 0.7rem;
+  color: gold;
+}
+.courses__section.container .courses .course .course__outline .course-duration {
+  margin-right: 1.1rem;
+  margin-top: -0.1rem;
+  padding: 0.3rem 0.5rem;
+  background-color: #ed6b4f;
+  border-radius: 30px;
 }
