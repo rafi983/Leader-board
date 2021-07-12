@@ -174,3 +174,60 @@ main {
   background-color: #ed6b4f;
   border-radius: 30px;
 }
+
+@media only screen and (max-width: 688px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  main {
+    background-color: white;
+    margin-bottom: 3rem;
+  }
+  header nav {
+    display: none;
+  }
+  .blog {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-info {
+    margin-left: -0.3rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .top__players,
+  .blogs__container,
+  .courses__section.container .courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 3.5rem;
+  }
+
+  .courses__section.container .courses .course {
+    margin-top: 2rem;
+    margin-left: -1.2rem;
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  header nav {
+    width: 100%;
+  }
+  .blog {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+  header nav {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+}
